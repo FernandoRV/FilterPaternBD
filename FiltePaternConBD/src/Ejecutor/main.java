@@ -301,7 +301,6 @@ public class main extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
          BD Prod = new BD();
-        Prod.setId(Integer.parseInt(this.txtId.getText().trim()));
         Prod.setNombre(txtNombre.getText().trim());
         Prod.setDescripcion(jTextField3.getText().trim());
         Prod.setStock(Integer.parseInt(this.jTextField4.getText().trim()));
@@ -318,7 +317,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        int fila = jTable1.getSelectedRow();
+       int fila = jTable1.getSelectedRow();
         BD Prod = new BD();
         Prod.setId(Integer.parseInt(jTable1.getValueAt(fila, 0).toString()));
         ProductoCrtl ctrlPro=new ProductoCrtl();

@@ -19,12 +19,12 @@ public class AddCriteria implements Criterial{
     
 public  AddCriteria(Criterial criteria, Criterial othCriteria){
     this.criteria=criteria;
-    this.otherCriteria=otherCriteria;
+    this.otherCriteria= othCriteria;
 }
     @Override
-    public List<BD> meetCriteria(List<BD> persons) {
-         List<BD> firsCriteriaPersons = criteria.meetCriteria(persons);
-        return otherCriteria.meetCriteria(firsCriteriaPersons);
+    public List<BD> meetCriteria(List<BD> Producto) {
+         List<BD> firsCriteriaProducto = criteria.meetCriteria(Producto);
+        return otherCriteria.meetCriteria(firsCriteriaProducto);
     }
    
     }
