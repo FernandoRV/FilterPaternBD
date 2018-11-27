@@ -19,7 +19,7 @@ public class CriteriaProveedor implements Criterial {
     public List<BD> meetCriteria(List<BD> producto) {
         List<BD> provProd = new ArrayList<BD>();
         for (BD produc : producto){
-            if(produc.getProveedor().equalsIgnoreCase("Proveedor")){
+            if(produc.getProveedor().equalsIgnoreCase("Gamesa")){
                 provProd.add(produc);
             }
         }

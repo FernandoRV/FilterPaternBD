@@ -16,17 +16,25 @@ import mx.edu.uttt.Filter.Entidad.Modelo.BD;
  */
 public class CriteriaNombre implements Criterial{
 
-    @Override
-    public List<BD> meetCriteria(List<BD> producto) {
+//    public List<BD> meetCriteria(List<BD> producto,String nombre) {
+//        List<BD> nomProd = new ArrayList<BD>();
+//        for (BD produc : producto){
+//            if(produc.getNombre().equalsIgnoreCase(nombre)){
+//                nomProd.add(produc);
+//            }
+//        }
+//        return nomProd;
+//    }
+  
+      public List<BD> meetCriteria(List<BD> producto) {
         List<BD> nomProd = new ArrayList<BD>();
         for (BD produc : producto){
-            if(produc.getNombre().equalsIgnoreCase("Nombre")){
+            if(produc.getNombre().equalsIgnoreCase("Galletas")){
                 nomProd.add(produc);
             }
         }
         return nomProd;
     }
-    
         
     }
     
